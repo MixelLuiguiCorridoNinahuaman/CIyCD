@@ -1,11 +1,9 @@
-name: holaMundo.yaml
+name: holaMundo
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run a script
+      - uses: actions/checkout@v3
+      - name: Ejecutar un script
         run: echo "¡Hola, mundo!"
